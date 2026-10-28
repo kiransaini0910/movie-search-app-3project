@@ -71,6 +71,22 @@ header p {
     transition: background 0.2s;
 }
 
+
+.clear-btn {
+    background-color: #334155;
+    color: #f8fafc;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.clear-btn:hover {
+    background-color: #475569;
+}
+
 .search-box button:hover {
     background-color: #0ea5e9;
 }

@@ -115,3 +115,11 @@ function renderFavorites() {
         favoritesList.appendChild(li);
     });
 }
+const clearBtn = document.getElementById('clearBtn');
+
+clearBtn.addEventListener('click', () => {
+    searchInput.value = ''; // Input box ko khali karega
+    moviesGrid.innerHTML = ''; // Movies grid ko saaf karega
+    errorDiv.classList.add('hidden'); // Agar koi error ho toh chupayega
+    searchInput.focus(); // Wapas input box par focus layega
+});
