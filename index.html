@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSearch | Movie Hub & API Explorer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎬 CineSearch Hub</h1>
+            <p>Explore movies instantly using OMDb REST API, async JavaScript, and LocalStorage.</p>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for movies (e.g., Batman, Interstellar)...">
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="loading" class="loading hidden">Loading movies...</div>
+        <div id="errorMsg" class="error hidden"></div>
+
+        <main class="content-grid">
+            <section class="results-section">
+                <h2>Search Results</h2>
+                <div id="moviesGrid" class="movies-grid">
+                    <!-- Dynamic movie cards will appear here -->
+                </div>
+            </section>
+
+            <section class="favorites-section">
+                <h2>⭐ Favorite Movies</h2>
+                <ul id="favoritesList">
+                    <!-- Saved favorites will appear here -->
+                </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
