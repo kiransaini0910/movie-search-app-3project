@@ -18,6 +18,17 @@ searchBtn.addEventListener('click', () => {
     }
 });
 
+// Button aur Input ko pakdo
+const clearButton = document.getElementById('clearBtn');
+const inputField = document.getElementById('userInput');
+
+// Jab button par click ho
+clearButton.addEventListener('click', function() {
+    inputField.value = ''; // Input box ko ekdum khali kar dega
+    inputField.focus();    // Wapas cursor ko wahi le aayega
+});
+
+
 searchInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         const query = searchInput.value.trim();
